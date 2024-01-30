@@ -32,8 +32,8 @@ class LoginApp(customtkinter.CTk):
         password = self.password_entry.get()
 
         if username == "admin" and password == "password":
-            self.withdraw()  # Hide the login window
-            self.main_window = MainApp(self)  # Create the main window
+            self.withdraw()
+            self.main_window = MainApp(self) 
         else:
             messagebox.showerror("Error", "Invalid username or password")
 
